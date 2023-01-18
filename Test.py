@@ -4,6 +4,6 @@ mycon = mysql.connector.connect(user='root', password='10Dec1964',
                                 host='localhost',
                                 auth_plugin='mysql_native_password')
 mycursor = mycon.cursor()
-mycursor.execute("select * from student where college != 'abc'")
+mycursor.execute("select * from student where college != 'abcd'")
 for db in mycursor:
     print(db)
